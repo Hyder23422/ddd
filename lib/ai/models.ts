@@ -9,11 +9,11 @@ export interface Model {
 
 export const models: Array<Model> = [
   {
-    id: 'o1-mini',
-    label: 'O1 Mini',
-    apiIdentifier: 'o1-mini-2024-09-12',  // Using the version from the pricing table
-    description: 'Fast and efficient for most tasks',
+    id: 'o1-2024-12-17',
+    label: 'O1',
+    apiIdentifier: 'o1-2024-12-17',
+    description: 'Powerful model for complex tasks',
   },
 ] as const;
 
-export const DEFAULT_MODEL_NAME: string = 'o1-mini';
+export const DEFAULT_MODEL_NAME: string = 'o1-2024-12-17';
