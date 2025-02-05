@@ -768,7 +768,7 @@ export async function POST(request: Request) {
                     Math.round((timeRemaining / 1000 / 60) * 10) / 10;
 
                   const result = await generateObject({
-                    model: openai('gpt-4o'), // feel free to change to a reasoning model, if so change the output to not be json (not supported)
+                    model: openai('gpt-o1'), // feel free to change to a reasoning model, if so change the output to not be json (not supported)
                     schema: z.object({
                       analysis: z.object({
                         summary: z.string(),
