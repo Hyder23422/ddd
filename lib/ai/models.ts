@@ -9,11 +9,17 @@ export interface Model {
 
 export const models: Array<Model> = [
   {
-    id: 'o1-2024-12-17',
-    label: 'O1',
-    apiIdentifier: 'o1-2024-12-17',
-    description: 'Powerful model for complex tasks',
+    id: 'gpt-4o',
+    label: 'GPT 4o',
+    apiIdentifier: 'gpt-4o',
+    description: 'For complex, multi-step tasks',
+  },
+  {
+    id: 'deepseek/deepseek-r1',
+    label: 'Deepseek r1',
+    apiIdentifier: 'deepseek/deepseek-r1',
+    description: 'Optimized for performance via OpenRouter',
   },
 ] as const;
 
-export const DEFAULT_MODEL_NAME: string = 'o1-2024-12-17';
+export const DEFAULT_MODEL_NAME: string = 'deepseek/deepseek-r1';
